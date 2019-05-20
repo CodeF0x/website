@@ -9,6 +9,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
 #particles,
 #one,
 #two {
@@ -16,15 +21,42 @@ body {
   width: 100%;
 }
 
-#particles {
-  z-index: -1;
-  background-color: #000000;
-}
-
 #one {
+  background-image: url('../../assets/img/background.jpg');
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#arrow-down {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  font-size: 2vh;
+}
+
+#arrow-down:hover {
+  cursor: pointer;
+}
+
+#two {
+  background: url('../../assets/img/background-dark.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgba(27, 31, 34, 0.85);
 }

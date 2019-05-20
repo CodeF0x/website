@@ -7,20 +7,39 @@
     <title>Welcome to my cyberspace!</title>
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="stylesheet" href="src/css/glitch.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
     <script src="assets/particles.min.js"></script>
   </head>
   <body>
-    <div id="particles"></div>
     <section id="one">
       <div class="glitch" data-text="Welcome!">
         Welcome!
       </div>
     </section>
-    <section id="two"></section>
-    <script>
-      particlesJS.load('particles', 'assets/particle-config.json', function() {
-        console.log('Particle party! 🎉');
-      });
-    </script>
+    <section id="two">
+      <div id="card">
+        <div id="about-me">
+          <h2>Some words about me</h2>
+          <p>
+            I am Tobi, and I am doing an apprenticeship as a computer scientist
+            with main focus on software development -- at least that is how it
+            is called in Germany. I somehow ended up in web development, and I
+            am really happy about this. I sometimes do stuff in other languages
+            and evironments too.
+          </p>
+        </div>
+        <div id="links">
+          <h2>Reach out</h2>
+          <p>Stuff</p>
+        </div>
+      </div>
+    </section>
+    <i id="arrow-down" class="fas fa-arrow-down"></i>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
