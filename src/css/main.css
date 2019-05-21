@@ -99,3 +99,11 @@ a:hover {
   display: inline-block;
   padding-right: 5px;
 }
+
+#copyright {
+  position: absolute;
+  bottom: -100vh;
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+}
