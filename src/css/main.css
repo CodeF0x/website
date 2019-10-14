@@ -1,110 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+header {
+  font-weight: 400;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+  border-bottom: 1px solid black;
 }
 
-#particles,
-#one,
-#two {
-  height: 100vh;
+#icon {
+  width: 40%;
+}
+
+#foxy {
+  height: 32px;
+  width: 32px;
+}
+
+#middle {
   width: 100%;
-}
-
-#one {
-  background-color: #000000;
-  background-image: url('../../assets/img/background.jpg');
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#arrow-down {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  height: 50px;
-  width: 50px;
-  color: #ffffff;
-  font-size: 2vh;
-}
-
-#arrow-down:hover {
-  cursor: pointer;
-}
-
-#two {
-  background: url('../../assets/img/background-dark.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 90vh;
 }
 
 #card {
-  border-radius: 5px;
-  background-color: rgba(27, 31, 34, 0.85);
-  padding: 3rem;
-  width: 70vw;
-}
-
-#card h2 {
-  text-transform: capitalize;
-  margin-bottom: 20px;
-  border-bottom: solid 1px #ffffff;
-  padding-bottom: 3px;
-  display: table;
-}
-
-#links {
-  margin-top: 2vh;
-}
-
-a {
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-    border-bottom-color 0.2s ease-in-out;
-  color: #ffffff;
-}
-
-a:hover {
-  background-color: transparent;
-}
-
-.icons a {
-  margin-top: 20px;
-  border-radius: 100%;
-  box-shadow: inset 0 0 0 1px #ffffff;
-  display: inline-block;
-  height: 2.25rem;
-  line-height: 2.25rem;
-  text-align: center;
-  width: 2.25rem;
-}
-
-.icons li {
-  display: inline-block;
-  padding-right: 5px;
-}
-
-#copyright {
-  position: absolute;
-  bottom: -100vh;
-  text-align: center;
+  height: 100%;
   width: 100%;
-  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#picture {
+  height: 150px;
+  width: 150px;
+  border-radius: 80px;
+  background-image: url('../../assets/img/me.png');
+  background-size: contain;
+  margin: 0 auto;
 }

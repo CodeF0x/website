@@ -28,78 +28,36 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section id="one">
-      <div class="glitch" data-text="Welcome!">
-        Welcome!
+    <header>
+      <div id="icon">
+        <img id="foxy" src="assets/img/favicon.ico" />
       </div>
-    </section>
-    <section id="two">
+      <div class="link">Things I created</div>
+      <div class="link">About me</div>
+      <div class="link">Get in touch</div>
+    </header>
+    <section id="middle">
       <div id="card">
-        <div id="about-me">
-          <h2>Some words about me</h2>
-          <p>
-            I am Tobi, and I am doing an apprenticeship as a computer scientist
-            with main focus on software development -- at least that is how it
-            is called in Germany. I somehow ended up in web development, and I
-            am really happy about this. I sometimes do stuff in other languages
-            and environments too. <a href="/projects/">But see yourself!</a>
-          </p>
-        </div>
-        <div id="links">
-          <h2>Reach out</h2>
-          <p>
-            I am in many places on the internet, so reach out via
-            <a href="https://mailhide.io/e/oaizV">mail</a> or here:
-          </p>
-          <ul class="icons">
-            <li>
-              <a href="https://github.com/CodeF0x">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://stackoverflow.com/users/9304377/codef0x">
-                <i class="fab fa-stack-overflow"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://telegram.me/CodeF0x">
-                <i class="fab fa-telegram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/CodeF0x">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com/the.mighty.whatever">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://open.spotify.com/user/9qz2xtkur2fengfsdcq8dd907?si=U3RVEpjtRkWJbg0fRy1vqw"
-              >
-                <i class="fab fa-spotify"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://bandcamp.com/themighywhatever">
-                <i class="fab fa-bandcamp"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <div id="picture"></div>
+        <p>Tobias "CodeF0x" Oettl</p>
+        <h1>
+          <span
+            class="typer"
+            id="main"
+            data-words="Web Developer,Metalhead,Gamer"
+            data-delay="100"
+            data-deleteDelay="1000"
+          ></span>
+          <span class="cursor" data-owner="main"></span>
+        </h1>
       </div>
     </section>
-    <footer id="copyright">
-      With ❤️ by CodeF0x | Images from
-      <a href="https://unsplash.com">Unsplash</a>
-    </footer>
-    <i id="arrow-down" class="fas fa-arrow-down"></i>
-    <script src="src/js/main.js"></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
   </body>
 </html>
