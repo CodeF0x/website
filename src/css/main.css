@@ -2,6 +2,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 header {
   font-weight: 400;
   margin: 0 auto;
@@ -12,7 +17,6 @@ header {
 }
 
 .link:hover {
-  cursor: pointer;
   border-bottom: 2px solid teal;
 }
 
@@ -41,8 +45,6 @@ header {
 
 #links > a {
   font-size: 2em;
-  color: black;
-  text-decoration: none;
   margin: 0 0.5em;
 }
 
@@ -53,4 +55,11 @@ header {
   background-image: url('../../assets/img/me.png');
   background-size: contain;
   margin: 0 auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
