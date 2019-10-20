@@ -21,7 +21,6 @@
     />
     <title>Hi! Welcome to my cyberspace!</title>
     <link rel="stylesheet" href="src/css/main.css" />
-    <link rel="stylesheet" href="src/css/glitch.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -32,15 +31,20 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <style>
+      #you-are-here {
+        color: teal;
+      }
+    </style>
   </head>
   <body>
     <header>
       <div id="icon">
         <img id="foxy" src="assets/img/favicon.ico" />
       </div>
-      <div class="link">Things I created</div>
-      <div class="link">About me</div>
-      <div class="link">Get in touch</div>
+      <div class="link" id="you-are-here">Home</div>
+      <div class="link">About</div>
+      <div class="link">Contact</div>
     </header>
     <section id="middle">
       <div id="card">
@@ -56,6 +60,17 @@
           ></span>
           <span class="cursor" data-owner="main"></span>
         </h1>
+        <div id="links">
+          <a href="https://github.com/CodeF0x">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/9304377/codef0x">
+            <i class="fab fa-stack-overflow"></i>
+          </a>
+          <a href="https://steamcommunity.com/id/justaf0x">
+            <i class="fab fa-steam"></i>
+          </a>
+        </div>
       </div>
     </section>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
