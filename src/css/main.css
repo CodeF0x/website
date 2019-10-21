@@ -1,3 +1,5 @@
+/** GENERAL */
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -6,6 +8,8 @@ a {
   color: black;
   text-decoration: none;
 }
+
+/** HEADER */
 
 header {
   font-weight: 400;
@@ -36,7 +40,7 @@ header {
   padding: 0.5em 0;
 }
 
-#your-are-here {
+#you-are-here {
   color: teal;
 }
 
@@ -52,6 +56,8 @@ header {
   height: 25px;
   width: 25px;
 }
+
+/** CONTENT IN PAGE */
 
 #middle {
   width: 100%;
@@ -81,15 +87,11 @@ header {
   margin: 0 auto;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-}
+/** MEDIA QUERIES */
 
 /** Tablet */
 @media (max-width: 768px) {
+  /** HEADER */
   header {
     display: none;
   }
@@ -98,16 +100,21 @@ footer {
     display: block;
   }
 
+  /** CONTENT */
+
   .about-card {
     width: 70%;
   }
 }
 
 @media (prefers-color-scheme: dark) {
+  /** GENERAL */
   body {
     background: #33313b;
     color: white;
   }
+
+  /** HEADER */
 
   header,
   .header-mobile-top {
@@ -122,6 +129,12 @@ footer {
     border-bottom: 2px solid #12bbbb;
   }
 
+  #you-are-here {
+    color: #04bfbf;
+  }
+
+  /** GENERAL */
+
   .fas,
   .fab {
     color: #04bfbf;
@@ -129,9 +142,5 @@ footer {
 
   .typer {
     color: white !important;
-  }
-
-  #you-are-here {
-    color: #04bfbf;
   }
 }
