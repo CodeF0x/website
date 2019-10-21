@@ -22,25 +22,37 @@
     <link rel="stylesheet" href="/src/css/main.css" />
     <link rel="stylesheet" href="contact.css" />
     <title>Contact me (I won't bite!)</title>
-    <style>
-      #you-are-here {
-        color: teal;
-      }
-    </style>
   </head>
   <body>
+    <header class="header-mobile">
+      <div class="header-mobile-top">
+        <img id="foxy" src="/assets/img/favicon.ico" />
+        <i class="fas fa-layer-group" id="mobile-header-expand"></i>
+      </div>
+      <div id="mobile-header-links">
+        <div class="link">
+          <a href="/" id="you-are-here">Home</a>
+        </div>
+        <div class="link">
+          <a href="/about">About</a>
+        </div>
+        <div class="link">
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+    </header>
     <header>
       <div id="icon">
         <img id="foxy" src="/assets/img/favicon.ico" />
       </div>
       <div class="link">
-        <a href="https://codef0x.dev">Home</a>
+        <a href="/">Home</a>
       </div>
       <div class="link">
-        <a href="https://codef0x.dev/about">About</a>
+        <a href="/about">About</a>
       </div>
       <div class="link">
-        <a href="https://codef0x.dev/contact" id="you-are-here">Contact</a>
+        <a href="/contact" id="you-are-here">Contact</a>
       </div>
     </header>
     <section id="middle">
@@ -48,8 +60,9 @@
         <div id="text-card">
           <h4>Write me something (nice)!</h4>
 
-          Feel free to write me (almost) anything! I'm open for chats about
-          coding, music, video games, and much more.
+          Although I'm <b>not</b> open for jobs or coding help, feel free to
+          write me (almost) anything! I'm always happy to talk about coding,
+          music, video games, and such.
         </div>
         <div id="contact-card">
           <a href="https://telegram.me/CodeF0x">
@@ -61,5 +74,6 @@
         </div>
       </div>
     </section>
+    <script src="/src/js/main.js"></script>
   </body>
 </html>

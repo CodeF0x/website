@@ -16,6 +16,30 @@ header {
   box-shadow: 0 2px 0 0 #f5f5f5;
 }
 
+.header-mobile {
+  width: 100%;
+  display: none;
+}
+
+.header-mobile-top {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-between;
+  box-shadow: 0 2px 0 0 #f5f5f5;
+}
+
+#mobile-header-links {
+  display: none;
+}
+
+#mobile-header-links > .link {
+  padding: 0.5em 0;
+}
+
+#your-are-here {
+  color: teal;
+}
+
 .link:hover {
   border-bottom: 2px solid teal;
 }
@@ -62,4 +86,52 @@ footer {
   bottom: 0;
   text-align: center;
   width: 100%;
+}
+
+/** Tablet */
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
+
+  header.header-mobile {
+    display: block;
+  }
+
+  .about-card {
+    width: 70%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #33313b;
+    color: white;
+  }
+
+  header,
+  .header-mobile-top {
+    box-shadow: 0 2px 0 0 teal;
+  }
+
+  .link > a {
+    color: white;
+  }
+
+  .link:hover {
+    border-bottom: 2px solid #12bbbb;
+  }
+
+  .fas,
+  .fab {
+    color: #04bfbf;
+  }
+
+  .typer {
+    color: white !important;
+  }
+
+  #you-are-here {
+    color: #04bfbf;
+  }
 }
