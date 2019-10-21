@@ -21,85 +21,90 @@
     />
     <title>Hi! Welcome to my cyberspace!</title>
     <link rel="stylesheet" href="src/css/main.css" />
-    <link rel="stylesheet" href="src/css/glitch.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section id="one">
-      <div class="glitch" data-text="Welcome!">
-        Welcome!
+    <!-- MOBILE VERSION OF HEADER -->
+    <header class="header-mobile">
+      <div class="header-mobile-top">
+        <img id="foxy" src="assets/img/favicon.ico" />
+        <i class="fas fa-layer-group" id="mobile-header-expand"></i>
       </div>
-    </section>
-    <section id="two">
+      <div id="mobile-header-links">
+        <div class="link">
+          <a href="/" id="you-are-here">Home</a>
+        </div>
+        <div class="link">
+          <a href="/about">About</a>
+        </div>
+        <div class="link">
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <!-- DESKTOP VERSION OF HEADER -->
+    <header>
+      <div id="icon">
+        <img id="foxy" src="assets/img/favicon.ico" />
+      </div>
+      <div class="link">
+        <a href="/" id="you-are-here">Home</a>
+      </div>
+      <div class="link">
+        <a href="/about">About</a>
+      </div>
+      <div class="link">
+        <a href="/contact">Contact</a>
+      </div>
+    </header>
+    <section id="middle">
       <div id="card">
-        <div id="about-me">
-          <h2>Some words about me</h2>
-          <p>
-            I am Tobi, and I am doing an apprenticeship as a computer scientist
-            with main focus on software development -- at least that is how it
-            is called in Germany. I somehow ended up in web development, and I
-            am really happy about this. I sometimes do stuff in other languages
-            and environments too. <a href="/projects/">But see yourself!</a>
-          </p>
-        </div>
+        <div id="picture"></div>
+        <p>Tobias "CodeF0x" Oettl</p>
+        <h1>
+          <span
+            class="typer"
+            id="main"
+            data-words="Web Developer,Metalhead,Gamer,🦊 lover"
+            data-delay="100"
+            data-deleteDelay="1000"
+          ></span>
+          <span class="cursor" data-owner="main"></span>
+        </h1>
         <div id="links">
-          <h2>Reach out</h2>
-          <p>
-            I am in many places on the internet, so reach out via
-            <a href="https://mailhide.io/e/oaizV">mail</a> or here:
-          </p>
-          <ul class="icons">
-            <li>
-              <a href="https://github.com/CodeF0x">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://stackoverflow.com/users/9304377/codef0x">
-                <i class="fab fa-stack-overflow"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://telegram.me/CodeF0x">
-                <i class="fab fa-telegram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/CodeF0x">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com/the.mighty.whatever">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://open.spotify.com/user/9qz2xtkur2fengfsdcq8dd907?si=U3RVEpjtRkWJbg0fRy1vqw"
-              >
-                <i class="fab fa-spotify"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://bandcamp.com/themighywhatever">
-                <i class="fab fa-bandcamp"></i>
-              </a>
-            </li>
-          </ul>
+          <a href="https://github.com/CodeF0x">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/9304377/codef0x">
+            <i class="fab fa-stack-overflow"></i>
+          </a>
+          <a href="https://steamcommunity.com/id/justaf0x">
+            <i class="fab fa-steam"></i>
+          </a>
         </div>
       </div>
     </section>
-    <footer id="copyright">
-      With ❤️ by CodeF0x | Images from
-      <a href="https://unsplash.com">Unsplash</a>
-    </footer>
-    <i id="arrow-down" class="fas fa-arrow-down"></i>
     <script src="src/js/main.js"></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script
+      data-name="BMC-Widget"
+      src="https://cdn.buymeacoffee.com/widget/1.0.0/prod/widget.prod.min.js"
+      data-id="CodeF0x"
+      data-description="Want to support me? ❤️🦊"
+      data-message="Do you like my work? Consider buying me a coffee!"
+      data-color="#79D6B5"
+      data-position="right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
   </body>
 </html>
