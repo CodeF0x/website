@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+.box-shadow {
+  box-shadow: 4px 4px 6px #777;
+}
+
 /** HEADER */
 
 header {
@@ -112,6 +116,10 @@ header {
   body {
     background: #33313b;
     color: white;
+  }
+
+  .box-shadow {
+    box-shadow: 4px 4px 6px black;
   }
 
   /** HEADER */
