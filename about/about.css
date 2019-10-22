@@ -20,6 +20,7 @@
   margin-top: 1em;
   border-top: 3px solid teal;
   font-size: 2em;
+  width: 100%;
 }
 
 .card-links > a > i {
