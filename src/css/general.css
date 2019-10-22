@@ -44,33 +44,34 @@ header {
   padding: 0.5em 0;
 }
 
-#you-are-here {
-  color: teal;
+.you-are-here {
+  color: teal !important;
 }
 
 .link:hover {
   border-bottom: 2px solid teal;
 }
 
-#icon {
+.icon {
   width: 40%;
 }
 
-#foxy {
+.foxy {
   height: 25px;
   width: 25px;
 }
 
 /** CONTENT IN PAGE */
 
-#middle {
+.middle {
   width: 100%;
   height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#card {
-  height: 100%;
-  width: 100%;
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,15 +81,6 @@ header {
 #links > a {
   font-size: 2em;
   margin: 0 0.5em;
-}
-
-#picture {
-  height: 150px;
-  width: 150px;
-  border-radius: 80px;
-  background-image: url('../../assets/img/me.png');
-  background-size: contain;
-  margin: 0 auto;
 }
 
 /** MEDIA QUERIES */
@@ -102,12 +94,6 @@ header {
 
   header.header-mobile {
     display: block;
-  }
-
-  /** CONTENT */
-
-  .about-card {
-    width: 70%;
   }
 }
 
@@ -137,8 +123,8 @@ header {
     border-bottom: 2px solid #12bbbb;
   }
 
-  #you-are-here {
-    color: #04bfbf;
+  .you-are-here {
+    color: #04bfbf !important;
   }
 
   /** GENERAL */
