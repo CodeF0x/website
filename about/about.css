@@ -1,11 +1,16 @@
 /** CONTENT */
 
+.middle {
+  height: auto;
+}
+
 .about-card {
   width: 25%;
   text-align: justify;
   background: #f1f1f1;
   padding: 0.5em;
   border-radius: 10px;
+  margin-top: 6em;
 }
 
 .card-text {
