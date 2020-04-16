@@ -1,29 +1,62 @@
 /** CONTENT */
 
 .middle {
-  height: auto;
+  height: 90vh;
 }
 
 .about-card {
-  width: 25%;
+  background: transparent;
+  padding: 0 10px 0;
   text-align: justify;
-  background: #f1f1f1;
-  padding: 0.5em;
-  border-radius: 10px;
-  margin-top: 6em;
 }
 
-.card-text {
-  width: 100%;
+#picture {
+  background-image: url('/assets/img/me2.jpg');
+  height: 150px;
+  width: 150px;
+  background-size: contain;
+  border-radius: 75% 25% 29% 71% / 55% 61% 39% 45%;
 }
 
-.card-image > img {
-  width: 100%;
+.first-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.first-row-text {
+  width: 55%;
+  padding-left: 10px;
+}
+
+.third-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.corner-left,
+.corner-right {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.corner-left {
+  border-left: 2px solid teal;
+  border-top: 2px solid teal;
+  top: 0;
+  left: 0;
+  margin-left: -10px;
+}
+
+.corner-right {
+  border-right: 2px solid teal;
+  border-bottom: 2px solid teal;
+  bottom: 0;
+  margin-right: -10px;
 }
 
 .card-links {
-  margin-top: 1em;
-  border-top: 3px solid teal;
   font-size: 2em;
   width: 100%;
 }
@@ -32,12 +65,12 @@
   padding: 0.2em 0.2em;
 }
 
+.card-links > a > i:nth-child(1) {
+  padding-left: 0;
+}
+
 /** Laptop & big tablet */
 @media (max-width: 1280px) {
-  .middle {
-    height: auto;
-  }
-
   .about-card {
     margin-top: 2em;
     width: 50%;
@@ -46,14 +79,30 @@
 
 /** Tablet */
 @media (max-width: 768px) {
+  .middle {
+    height: 100vh;
+  }
+
   .about-card {
     width: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+/** Smartphones */
+@media (max-width: 375px) {
+  .middle {
+    height: 100vh;
+  }
+
+  .about-card {
+    width: 90%;
+    margin-bottom: 20px;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .about-card {
-    background: #555;
     color: white;
   }
 }
