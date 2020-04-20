@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 body {
     font-size: 20px;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -14,6 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 300;
 }
 
 .left-header-box,
@@ -55,6 +59,11 @@ footer {
 .link-box {
     width: 33%;
     text-align: center;
+}
+
+.link-box span {
+    display: block;
+    font-weight: 300;
 }
 
 .fab {
