@@ -91,7 +91,8 @@ footer {
     font-weight: 300;
 }
 
-.fab {
+.fab,
+.fas {
     font-size: 75px;
 }
 
@@ -121,7 +122,8 @@ footer {
         font-size: 20px;
     }
 
-    .fab {
+    .fab,
+    .fas {
         font-size: 50px;
     }
 }
@@ -140,7 +142,8 @@ footer {
         font-size: 20px;
     }
 
-    .fab {
+    .fab,
+    .fas {
         font-size: 30px;
     }
 }
