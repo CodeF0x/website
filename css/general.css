@@ -87,7 +87,7 @@ footer {
     font-size: 75px;
 }
 
-@media (max-width: 800px) and (max-height: 1024px) {
+@media (max-width: 800px) and (max-height: 1280px) {
     .main {
         flex-direction: column;
     }
@@ -99,9 +99,37 @@ footer {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 812px) and (max-height: 375px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .photo-box,
+    .text-box {
+        height: 100%;
+    }
+   
+    h2 {
+        font-size: 20px;
+    }
+
+    .fab {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 414px) {
     footer {
         flex-direction: column;
+    }
+
+    .link-box {
+        width: 100%;
+        padding-top: 7px;
+    }
+
+    h2 {
+        font-size: 20px;
     }
 
     .fab {
