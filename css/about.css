@@ -19,12 +19,16 @@
 
     .text-box,
     .photo-box {
-        height: 50%;
         width: 100%;
     }
 
     .text-box {
         font-size: 16px;
+        height: 60%;
+    }
+
+    .photo-box {
+        height: 40%;
     }
 }
 
