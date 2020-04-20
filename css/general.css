@@ -54,6 +54,14 @@ a:visited {
     color: unset;
 }
 
+.you-are-here {
+    border-bottom: 3px solid teal;
+}
+
+.phantom-border {
+    border-bottom: 3px solid transparent;
+}
+
 .text-box,
 .photo-box {
     height: 100%;
