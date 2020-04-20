@@ -1,8 +1,0 @@
-#picture {
-  height: 150px;
-  width: 150px;
-  border-radius: 80px;
-  background-image: url('../../assets/img/me.png');
-  background-size: contain;
-  margin: 0 auto;
-}

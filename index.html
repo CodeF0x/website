@@ -3,75 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <meta
-      name="description"
-      content="I'm Tobi, a web developer who loves video games and certain genres of music -- nice to meet you!"
-    />
-    <meta name="keywords" content="Web,Webdeveloper,CodeF0x,foxish-mess" />
-    <meta name="author" content="Tobias CodeF0x Oettl" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicon.ico"
-    />
-    <title>Hi! Welcome to my cyberspace!</title>
-    <link rel="stylesheet" href="src/css/general.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/c8c69acc60.js"
       crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    ></script>
+    <title>CodeF0x</title>
   </head>
   <body>
-    <!-- MOBILE VERSION OF HEADER -->
-    <header class="header-mobile">
-      <div class="header-mobile-top">
-        <img class="foxy" src="assets/img/favicon.ico" />
-        <i class="fas fa-layer-group" id="mobile-header-expand"></i>
-      </div>
-      <div id="mobile-header-links">
-        <div class="link">
-          <a href="/" class="you-are-here">Home</a>
-        </div>
-        <div class="link">
-          <a href="/about">About</a>
-        </div>
-        <div class="link">
-          <a href="/contact">Contact</a>
-        </div>
-      </div>
-    </header>
-    <!-- DESKTOP VERSION OF HEADER -->
     <header>
-      <div class="icon">
-        <img class="foxy" src="assets/img/favicon.ico" />
+      <div class="left-header-box">
+        <img src="assets/img/favicon.ico" />
+        <a href="https://codef0x.dev" class="you-are-here">codef0x.</a>
       </div>
-      <div class="link">
-        <a href="/" class="you-are-here">Home</a>
-      </div>
-      <div class="link">
-        <a href="/about">About</a>
-      </div>
-      <div class="link">
-        <a href="/contact">Contact</a>
+      <div class="right-header-box">
+        <a href="/about" class="phantom-border">about</a>&nbsp;
+        <a href="/contact" class="phantom-border">contact</a>
       </div>
     </header>
-    <section class="middle">
-      <div class="card">
-        <div id="picture"></div>
-        <p>Tobias "CodeF0x" Oettl</p>
-        <h1>
+    <section class="main">
+      <div class="text-box">
+        <div>
+          <h2>Hi. I'm Tobias "CodeF0x" Oettl</h2>
           <span
             class="typer"
             id="main"
@@ -80,28 +34,39 @@
             data-deleteDelay="1000"
           ></span>
           <span class="cursor" data-owner="main"></span>
-        </h1>
-        <div id="links">
-          <a href="https://github.com/CodeF0x">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://stackoverflow.com/users/9304377/codef0x">
-            <i class="fab fa-stack-overflow"></i>
-          </a>
-          <a href="https://steamcommunity.com/id/justaf0x">
-            <i class="fab fa-steam"></i>
-          </a>
         </div>
       </div>
+      <div class="photo-box">
+        <img class="photo" src="assets/img/me.png" />
+      </div>
     </section>
-    <script src="src/js/main.js"></script>
+    <footer>
+      <div class="link-box">
+        <a href="https://github.com/CodeF0x/">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+      <div class="link-box">
+        <a href="https://stackoverflow.com/users/9304377/codef0x">
+          <i class="fab fa-stack-overflow"></i>
+          <span>Stack Overflow</span>
+        </a>
+      </div>
+      <div class="link-box">
+        <a href="https://steamcommunity.com/id/justaf0x">
+          <i class="fab fa-steam"></i>
+          <span>Steam</span>
+        </a>
+      </div>
+    </footer>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script
       data-name="BMC-Widget"
-      src="https://cdn.buymeacoffee.com/widget/1.0.0/prod/widget.prod.min.js"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
       data-id="CodeF0x"
       data-description="Want to support me? ❤️🦊"
-      data-message="Do you like my work? Consider buying me a pizza!"
+      data-message=""
       data-color="#79D6B5"
       data-position="right"
       data-x_margin="18"
