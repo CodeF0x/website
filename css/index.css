@@ -1,4 +1,109 @@
-.photo {
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  height: 80%;
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #292841;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a,
+a:visited {
+  color: white;
+}
+
+.underline {
+  text-decoration-thickness: 5px;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+ul {
+  margin: 10px 0;
+}
+
+.main {
+  display: flex;
+  width: 50%;
+}
+
+.main__image > img {
+  border-radius: 5px;
+}
+
+.main__text-container {
+  padding-left: 25px;
+  width: 50%;
+}
+
+.main-text-container__text {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text-container__text > p {
+  padding: 10px 0;
+}
+
+.main-text-container__text {
+  font-family: "JetBrains Mono", monospace;
+  text-align: justify;
+  color: white;
+  justify-content: center;
+}
+
+.main-text-container__text > h2 {
+  font-family: "Roboto", sans-serif;
+  padding: 15px 0;
+}
+
+.main-text-container-text__social-icon {
+  text-decoration: none;
+}
+
+.fab,
+.fas {
+  color: white;
+  font-size: 30px;
+  padding: 0 5px;
+}
+
+.main-text-container__social-icons {
+  height: 10%;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    width: 70%;
+  }
+}
+
+@media (max-width: 415px) {
+
+  .main {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 20px;
+  }
+
+  .main__image {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .main__text-container {
+    padding: 0;
+    width: 100%;
+  }
+
+  .main-text-container__social-icons {
+    text-align: center;
+  }
 }
