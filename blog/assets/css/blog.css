@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Roboto:wght@300&display=swap");
+
+:root {
+  --color: white;
+  --background: black;
+  --color-light: #ffffff80;
+  --color-contrast: yellow;
+}
+
+::selection {
+    background: var(--color-contrast);
+    color: black;
+  }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--background);
+}
+
+a {
+  color: var(--color);
+}
+
+.nav-menu {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+}
+
+.main {
+  margin: 150px auto;
+  width: 50%;
+}
+
+.main__headline {
+  color: var(--color-contrast);
+}
+
+.main__author {
+  color: var(--color-light);
+}
+
+.main__flowtext {
+  padding-top: 20px;
+  font-family: "JetBrains Mono", monospace;
+  text-align: justify;
+  color: var(--color);
+}
+
+@media (max-width: 414px) {
+  .main {
+    width: 90%;
+  }
+
+  .nav-menu {
+    top: unset;
+    position: fixed;
+    bottom: 0px;
+    background: #000;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+}

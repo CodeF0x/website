@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="How I fixed stuttering in ARK: Survival Evolved under Linux Proton">
+  <meta name="author" content="CodeF0x">
+  <meta name="keywords" content=" linux,  gaming,  proton,  ark,  ark: survival evolved,  steam, ">
+  <link rel="stylesheet" href="../assets/css/blog.css" />
+  <title>Fixing stuttering in ARK: Survival Evolved under Linux Proton</title>
+</head>
+  <body>
+    <div class="nav-menu">
+      <a href="../">home</a>
+      <span>|</span>
+      <a href="" id="back-to-top">back to top</a>
+    </div>
+    <section class="main">
+      <h1 class="main__headline">Fixing stuttering in ARK: Survival Evolved under Linux Proton</h1>
+      <h4 class="main__author">
+        by <a href="&#x2F;">CodeF0x</a> | 2021-06-07
+      </h4>
+      <section class="main__flowtext"><h3>Foreword</h3>
+<p>If you have an <strong>NVIDIA GPU</strong> you can try my <a href="posts/steam-proton-shader-caching.html">other fix for stuttering games under Linux Proton</a>. Maybe that fixes it. If that didn't fix it or you have an <strong>AMD GPU</strong>, keep on reading.</p>
+<h3>Editing ARK's launch options via Steam</h3>
+<p>Inside your Steam library, do the following:</p>
+<ul>
+<li>right-click on ARK: Survival Evolved</li>
+<li>click on &quot;Properties&quot;</li>
+<li>paste <code>RADV_PERFTEST=aco %COMMAND%</code> in the input field below &quot;Launch Options&quot;</li>
+<li>close out the window with the x-button</li>
+</ul>
+<p>That should be it.</p>
+<p>To be honest, I have no idea what this command does, but for me it fixed the stuttering completely (expect when the game shits itself, but it's ARK so that's just normal behaviour).</p>
+</section>
+    </section>
+    <script>
+      document.getElementById("back-to-top").addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>

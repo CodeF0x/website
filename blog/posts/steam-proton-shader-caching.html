@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="How I fixed game stuttering under Steam Proton.">
+  <meta name="author" content="CodeF0x">
+  <meta name="keywords" content=" gaming,  steam,  linux,  proton,  lags,  stuttering, ">
+  <link rel="stylesheet" href="../assets/css/blog.css" />
+  <title>Fixing game stuttering under Proton in Steam</title>
+</head>
+  <body>
+    <div class="nav-menu">
+      <a href="../">home</a>
+      <span>|</span>
+      <a href="" id="back-to-top">back to top</a>
+    </div>
+    <section class="main">
+      <h1 class="main__headline">Fixing game stuttering under Proton in Steam</h1>
+      <h4 class="main__author">
+        by <a href="&#x2F;">CodeF0x</a> | 2021-06-07
+      </h4>
+      <section class="main__flowtext"><h3>Disclaimer: This works <strong>only for NVIDIA cards</strong>!</h3>
+<p>When I first tried out Steam's Proton support, I noticed that DOOM Eternal wasn't running smooth at all. I would be at a constant 75 FPS according to my FPS counter, but I still experienced a lot of stutters / micro lags while playing.</p>
+<h3>How I fixed the stuttering issue</h3>
+<ul>
+<li>create a directory for the games to cache their shaders, e. g. /home/you/Shaders</li>
+<li>declare the following environment variables:
+<ul>
+<li><code>__GL_SHADER_DISK_CACHE_SKIP_CLEANUP</code> and set it to <code>1</code></li>
+<li><code>__GL_SHADER_DISK_CACHE_PATCH</code> and set it to the path of your earlier created shaders 		directory</li>
+</ul>
+</li>
+</ul>
+<p>However, this only fixes it for your current session. To make the fix persistent through out system reboots, add these two lines to your <code>/etc/profile</code> file, respectively the file your shell uses.</p>
+<p>It should look like this:</p>
+<pre><code>export __GL_SHADER_DISK_CACHE_PATH=/home/you/Shaders
+export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1
+</code></pre>
+<h3>Explanation</h3>
+<p>The problem is that <a href="https://devtalk.nvidia.com/default/topic/1032059/linux/opengl-shader-disk-cache-max-size-garbage-collection-/post/5251315/#5251315">NVIDIA has a limit of 128 MB for its shader cache</a>. Some games use way more than that.</p>
+<p>As there's no way to increase the cache size, we tell the NVIDIA driver to use deticated directoriesfor each game to store shaders in instead of caching them.</p>
+<p><strong>This also fixes the problem that Steam compiles VULKAN shaders everytime you launch a game via Proton</strong>.</p>
+<p><a href="https://www.reddit.com/r/wine_gaming/comments/8ih53x/tutorial_how_to_reduce_stuttering_nvidia/">Source</a></p>
+</section>
+    </section>
+    <script>
+      document.getElementById("back-to-top").addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>

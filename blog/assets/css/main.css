@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Roboto:wght@300&display=swap");
+
+:root {
+  --color: white;
+  --background: black;
+  --color-light: #ffffff80;
+  --color-contrast: yellow;
+}
+
+::selection {
+  background: var(--color-contrast);
+  color: black;
+}
+
+body {
+  color: var(--color);
+  background: var(--background);
+  font-size: 18px;
+}
+
+a {
+  color: var(--color);
+}
+
+.header-column__label {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+header {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  color: yellow;
+  height: 300px;
+  width: 150px;
+}
+
+header > section {
+  width: 100%;
+  display: flex;
+}
+
+.header__column {
+  width: 33%;
+  text-align: center;
+}
+
+.main {
+  font-family: "JetBrains Mono", monospace;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.main__headlines {
+  text-align: center;
+}
+
+.main__headlines h4 {
+  color: var(--color-contrast);
+}
+
+.main__text {
+    text-align: center;
+}
+
+.main-text__line {
+  white-space: nowrap;
+}
+
+.main-text__line::after,
+.main-text__line::before {
+  color: var(--color-light);
+  content: " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ";
+}
+
+.main__posts {
+  margin: 25px;
+}
+
+.main__posts > a {
+  display: block;
+  margin: 35px;
+}
+
+.main__posts h3 {
+  text-align: center;
+  color: var(--color-contrast);
+}
+
+.no-color {
+  color: var(--color);
+}
+
+@media (max-width: 800px) and (max-height: 1280px) {
+  .main__text {
+    width: 80%;
+    text-align: justify;
+  }
+  
+  .main-text__line {
+    white-space: normal;
+  }
+
+  .main-text__line::after,
+  .main-text__line::before {
+    content: ''
+  }
+}
