@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Darksouls 3 can lag badly under Linux Proton. Here&#x27;s how I fixed it.">
+  <meta name="author" content="CodeF0x">
+  <meta name="keywords" content=" dark souls,  gaming,  lags,  lagging,  linux,  proton,  dark souls 3, ">
+  <link rel="stylesheet" href="../assets/css/blog.css" />
+  <title>How I fixed lags in Dark Souls 3 with Proton on Linux</title>
+</head>
+  <body>
+    <div class="nav-menu">
+      <a href="../">home</a>
+      <span>|</span>
+      <a href="" id="back-to-top">back to top</a>
+    </div>
+    <section class="main">
+      <h1 class="main__headline">How I fixed lags in Dark Souls 3 with Proton on Linux</h1>
+      <h4 class="main__author">
+        by <a href="&#x2F;">CodeF0x</a> | 2021-06-28
+      </h4>
+      <section class="main__flowtext"><h1>The issue</h1>
+<p>Dark Souls 3 can be pretty laggy when running with Proton on Linux. According to my FPS counter, it would run at a constant 60 FPS (it's locked to 60 by the game), but it didn't feel like 60 FPS at all. Sometimes I even had very noticable lag spikes.</p>
+<h1>The solution</h1>
+<p>To fix this issue, create a file called <code>dxvk.conf</code> in the root directory of your Dark Souls 3 installation.</p>
+<p>It should look like this:</p>
+<pre><code>DarkSouls3/
+├─ Game/
+├─ dxvk.conf
+</code></pre>
+<p>Now open the file and add <code>dxgi.syncInterval = 0</code> as its content.</p>
+<h1>Conclusion</h1>
+<p>And that's it! Enjoy your smooth running game! When it comes to the FPS lock, there seems to be no way to disable it. Some users claim to have disabled it and the game completely shat itself (crashes, horribly broken game physics, etc.) and others even say that you get shadow banned. So if you want to make other players' life hard by invading them, get used to 60 FPS.</p>
+</section>
+    </section>
+    <script>
+      document.getElementById("back-to-top").addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
