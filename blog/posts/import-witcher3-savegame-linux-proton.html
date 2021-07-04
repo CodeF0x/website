@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Import Witcher 3 savegames from GOG to Steam in Linux Proton">
+  <meta name="author" content="CodeF0x">
+  <meta name="keywords" content=" the witcher 3,  the wither: wild hunt,  savegames,  savegame,  linux,  proton,  gaming,  steam,  gog, ">
+  <link rel="stylesheet" href="../assets/css/blog.css" />
+  <title>Import Witcher 3 savegames from GOG to Steam in Linux Proton</title>
+</head>
+  <body>
+    <div class="nav-menu">
+      <a href="../">home</a>
+      <span>|</span>
+      <a href="" id="back-to-top">back to top</a>
+    </div>
+    <section class="main">
+      <h1 class="main__headline">Import Witcher 3 savegames from GOG to Steam in Linux Proton</h1>
+      <h4 class="main__author">
+        by <a href="&#x2F;">CodeF0x</a> | 2021-07-04
+      </h4>
+      <section class="main__flowtext"><h1>Import Witcher 3 savegames from GOG to Steam in Linux Proton</h1>
+<p>I recently bought Witcher 3: The Wild Hunt on Steam and wanted to import my savegames from the GOG version. In Windows, that's easy: install the Witcher 3 on Steam, boot it up and press continue; your savegames will be there, as they're saved in <code>Users\you\Documents\The Witcher 3</code> and both games use that location to store their savegames at.</p>
+<p>When playing Witcher 3 via Proton... that's different.</p>
+<h1>Import your savegames</h1>
+<p>So, here's the steps:</p>
+<ul>
+<li>copy the complete <code>gamesaves</code> directory from your previous Witcher 3 installtion</li>
+<li>remember the Steam ID of the game: <code>292030</code></li>
+<li>locate your Steam library. Per default, it's at <code>~/.steam/</code> or at <code>~/.local/share/Steam/</code></li>
+<li>go to <code>your-steam-library-path/steamapps/compatdata/292030/pfx/drive_c/users/steamuser/My Documents/</code></li>
+<li>create a directory <code>The Witcher 3</code></li>
+<li>copy your savegames directory <code>gamesaves</code> to the newly created <code>The Witcher 3</code> directory</li>
+</ul>
+<p>And that's it!</p>
+<p>With the next restart of the game, your savegames are ready to load.</p>
+</section>
+    </section>
+    <script>
+      document.getElementById("back-to-top").addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
