@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Jul 2021 00:41:03 +0200</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Import Witcher 3 Savegame Linux Proton</title>
+      <link>/posts/import-withcer3-savegame-linux-proton/</link>
+      <pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
+      
+      <guid>/posts/import-withcer3-savegame-linux-proton/</guid>
+      <description>Import Witcher 3 save games from GOG to Steam in Linux Proton I recently bought Witcher 3: The Wild Hunt on Steam and wanted to import my savegames from the GOG version. In Windows, that&amp;rsquo;s easy: install the Witcher 3 on Steam, boot it up and press continue; your savegames will be there, as they&amp;rsquo;re saved in Users\you\Documents\The Witcher 3 and both games use that location to store their savegames at.</description>
+    </item>
+    
+    <item>
+      <title>Fix Lagging Darksouls3 Linux</title>
+      <link>/posts/fix-lagging-darksouls3-linux/</link>
+      <pubDate>Mon, 28 Jun 2021 00:39:49 +0200</pubDate>
+      
+      <guid>/posts/fix-lagging-darksouls3-linux/</guid>
+      <description>The issue Dark Souls 3 can be pretty laggy when running with Proton on Linux. According to my FPS counter, it would run at a constant 60 FPS (it&amp;rsquo;s locked to 60 by the game), but it didn&amp;rsquo;t feel like 60 FPS at all. Sometimes I even had very noticable lag spikes.
+The solution To fix this issue, create a file called dxvk.conf in the root directory of your Dark Souls 3 installation.</description>
+    </item>
+    
+    <item>
+      <title>Fix Ark Proton Stuttering</title>
+      <link>/posts/fix-ark-proton-stuttering/</link>
+      <pubDate>Thu, 17 Jun 2021 00:37:09 +0200</pubDate>
+      
+      <guid>/posts/fix-ark-proton-stuttering/</guid>
+      <description>Foreword If you have an NVIDIA GPU, you can try my other fix for stuttering games under Linux Proton . Maybe that fixes it. If that didn&amp;rsquo;t fix it or you have an AMD GPU, keep on reading.
+Editing ARK&amp;rsquo;s launch options via Steam Inside your Steam library, do the following:
+right-click on ARK: Survival Evolved click on &amp;ldquo;Properties&amp;rdquo; paste RADV_PERFTEST=aco %COMMAND% in the input field below &amp;ldquo;Launch Options&amp;rdquo; close out the window with the x-button That should be it.</description>
+    </item>
+    
+    <item>
+      <title>Steam Proton Shader Cashing</title>
+      <link>/posts/steam-proton-shader-cashing/</link>
+      <pubDate>Thu, 17 Jun 2021 00:31:18 +0200</pubDate>
+      
+      <guid>/posts/steam-proton-shader-cashing/</guid>
+      <description>Disclaimer: This only works for NVIDIA cards! When I first tried out Steam&amp;rsquo;s Proton support, I noticed that DOOM Eternal wasn&amp;rsquo;t running smooth at all. I would be at a constant 75 FPS according to my FPS counter, but I still experienced a lot of stutters / micro lags while playing.
+How I fixed the stuttering issue create a directory for the games to cache their shaders, e. g. /home/you/Shaders declare the following environment variables: __GL_SHADER_DISK_CACHE_SKIP_CLEANUP and set it to 1 __GL_SHADER_DISK_CACHE_PATH and set it to the path of your earlier created shaders directory However, this only fixes it for your current session.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on </title>
+    <link>/about/</link>
+    <description>Recent content in About on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Jul 2023 21:32:05 +0200</lastBuildDate><atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/about/about/</link>
+      <pubDate>Mon, 17 Jul 2023 21:32:05 +0200</pubDate>
+      
+      <guid>/about/about/</guid>
+      <description>About me I&amp;rsquo;m a Frontend Developer at Hetzner Cloud since 2020. I got my education from an apprenticeship at United Internet / 1&amp;amp;1 from 2017 to 2020. Before that I attendet German High School (Realschule). At my day-to-day job I use mostly Angular, TypeScript, Jest, Karma, Storybook and Cypress. In me free time I&amp;rsquo;m working on more of less serious projects in Rust and JavaScript which you can find on GitHub .</description>
+    </item>
+    
+  </channel>
+</rss>
