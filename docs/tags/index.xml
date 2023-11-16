@@ -6,33 +6,42 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Jul 2021 00:41:03 +0200</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Nov 2023 18:10:23 +0100</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Internet</title>
+      <link>/tags/internet/</link>
+      <pubDate>Thu, 16 Nov 2023 18:10:23 +0100</pubDate>
+      <guid>/tags/internet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>YouTube</title>
+      <link>/tags/youtube/</link>
+      <pubDate>Thu, 16 Nov 2023 18:10:23 +0100</pubDate>
+      <guid>/tags/youtube/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Gaming</title>
       <link>/tags/gaming/</link>
       <pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
-      
       <guid>/tags/gaming/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Linux</title>
       <link>/tags/linux/</link>
       <pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
-      
       <guid>/tags/linux/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Proton</title>
       <link>/tags/proton/</link>
       <pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
-      
       <guid>/tags/proton/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet on </title>
+    <link>/tags/internet/</link>
+    <description>Recent content in Internet on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Nov 2023 18:10:23 +0100</lastBuildDate>
+    <atom:link href="/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove Youtube Statement Banner</title>
+      <link>/posts/remove-youtube-statement-banner/</link>
+      <pubDate>Thu, 16 Nov 2023 18:10:23 +0100</pubDate>
+      <guid>/posts/remove-youtube-statement-banner/</guid>
+      <description>How to remove the Statement / Theme Banners from YouTube After years of these super annoying YouTube banners, I hacked together a little script that removes them from the DOM upon finding one.
+To run this, you need to install something like Tampermonkey (available for Firefox and Chrome) and create a new userscript with the following code:
+// ==UserScript== // @name Fuck YouTube Theme banners // @namespace https://codef0x.dev // @version 1.</description>
+    </item>
+  </channel>
+</rss>

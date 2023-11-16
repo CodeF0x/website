@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2023-07-17T21:32:05+02:00</lastmod>
+    <lastmod>2023-11-16T18:10:23+01:00</lastmod>
+  </url><url>
+    <loc>/tags/internet/</loc>
+    <lastmod>2023-11-16T18:10:23+01:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2023-11-16T18:10:23+01:00</lastmod>
+  </url><url>
+    <loc>/posts/remove-youtube-statement-banner/</loc>
+    <lastmod>2023-11-16T18:10:23+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-11-16T18:10:23+01:00</lastmod>
+  </url><url>
+    <loc>/tags/youtube/</loc>
+    <lastmod>2023-11-16T18:10:23+01:00</lastmod>
   </url><url>
     <loc>/about/</loc>
     <lastmod>2023-07-17T21:32:05+02:00</lastmod>
@@ -20,13 +35,7 @@
     <loc>/tags/linux/</loc>
     <lastmod>2021-07-04T00:41:03+02:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2021-07-04T00:41:03+02:00</lastmod>
-  </url><url>
     <loc>/tags/proton/</loc>
-    <lastmod>2021-07-04T00:41:03+02:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2021-07-04T00:41:03+02:00</lastmod>
   </url><url>
     <loc>/posts/fix-lagging-darksouls3-linux/</loc>
