@@ -13,9 +13,7 @@
       <link>/posts/remove-youtube-statement-banner/</link>
       <pubDate>Thu, 16 Nov 2023 18:10:23 +0100</pubDate>
       <guid>/posts/remove-youtube-statement-banner/</guid>
-      <description>How to remove the Statement / Theme Banners from YouTube After years of these super annoying YouTube banners, I hacked together a little script that removes them from the DOM upon finding one.
-To run this, you need to install something like Tampermonkey (available for Firefox and Chrome) and create a new userscript with the following code:
-// ==UserScript== // @name Fuck YouTube Theme banners // @namespace https://codef0x.dev // @version 1.</description>
+      <description>How to remove the Statement / Theme Banners from YouTube After years of these super annoying YouTube banners, I hacked together a little script that removes them from the DOM upon finding one.&#xA;To run this, you need to install something like Tampermonkey (available for Firefox and Chrome) and create a new userscript with the following code:&#xA;// ==UserScript== // @name Fuck YouTube Theme banners // @namespace https://codef0x.dev // @version 1.</description>
     </item>
   </channel>
 </rss>

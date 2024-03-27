@@ -3,6 +3,7 @@ languageCode = "en-us"
 theme = "poison"
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
+publishDir = "docs"
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 # disqusShortname = "yourDisqusShortname"
@@ -35,7 +36,7 @@ github_url = "https://github.com/CodeF0x"
 #tryhackme_url = "https://tryhackme.com"
 #discord_url = "https://discord.com"
 #youtube_url = "https://youtube.com"
-instagram_url = "https://instagram.com/tobs_i30n"
+instagram_url = "https://instagram.com/tobs_baby_m5"
 #facebook_url = "https://facebook.com"
 #flickr_url = "https://flickr.com"
 telegram_url = "https://t.me/CodeF0x"
