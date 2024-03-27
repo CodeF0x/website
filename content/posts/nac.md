@@ -136,7 +136,7 @@ I
 
 This is what I ended up with:
 
-![](../../static/img/nac-gui.png)
+![](/img/nac-gui.png)
 
 You can view the full code on [GitHub](https://github.com/CodeF0x/NAC).
 
