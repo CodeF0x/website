@@ -4,7 +4,7 @@
     <title>Gaming on </title>
     <link>/tags/gaming/</link>
     <description>Recent content in Gaming on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Jul 2021 00:41:03 +0200</lastBuildDate>
     <atom:link href="/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,28 @@
       <link>/posts/import-withcer3-savegame-linux-proton/</link>
       <pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
       <guid>/posts/import-withcer3-savegame-linux-proton/</guid>
-      <description>Import Witcher 3 save games from GOG to Steam in Linux Proton I recently bought Witcher 3: The Wild Hunt on Steam and wanted to import my savegames from the GOG version. In Windows, that&amp;rsquo;s easy: install the Witcher 3 on Steam, boot it up and press continue; your savegames will be there, as they&amp;rsquo;re saved in Users\you\Documents\The Witcher 3 and both games use that location to store their savegames at.</description>
+      <description>&lt;h1 id=&#34;import-witcher-3-save-games-from-gog-to-steam-in-linux-proton&#34;&gt;Import Witcher 3 save games from GOG to Steam in Linux Proton&lt;/h1&gt;&#xA;&lt;p&gt;I recently bought Witcher 3: The Wild Hunt on Steam and wanted to import my savegames from the GOG version. In Windows, that&amp;rsquo;s easy: install the Witcher 3 on Steam, boot it up and press continue; your savegames will be there, as they&amp;rsquo;re saved in &lt;code&gt;Users\you\Documents\The Witcher 3&lt;/code&gt; and both games use that location to store their savegames at.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fix Lagging Darksouls3 Linux</title>
       <link>/posts/fix-lagging-darksouls3-linux/</link>
       <pubDate>Mon, 28 Jun 2021 00:39:49 +0200</pubDate>
       <guid>/posts/fix-lagging-darksouls3-linux/</guid>
-      <description>The issue Dark Souls 3 can be pretty laggy when running with Proton on Linux. According to my FPS counter, it would run at a constant 60 FPS (it&amp;rsquo;s locked to 60 by the game), but it didn&amp;rsquo;t feel like 60 FPS at all. Sometimes I even had very noticable lag spikes.&#xA;The solution To fix this issue, create a file called dxvk.conf in the root directory of your Dark Souls 3 installation.</description>
+      <description>&lt;h1 id=&#34;the-issue&#34;&gt;The issue&lt;/h1&gt;&#xA;&lt;p&gt;Dark Souls 3 can be pretty laggy when running with Proton on Linux. According to my FPS counter, it would run at a constant 60 FPS (it&amp;rsquo;s locked to 60 by the game), but it didn&amp;rsquo;t feel like 60 FPS at all. Sometimes I even had very noticable lag spikes.&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-solution&#34;&gt;The solution&lt;/h1&gt;&#xA;&lt;p&gt;To fix this issue, create a file called &lt;code&gt;dxvk.conf&lt;/code&gt; in the root directory of your Dark Souls 3 installation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fix Ark Proton Stuttering</title>
       <link>/posts/fix-ark-proton-stuttering/</link>
       <pubDate>Thu, 17 Jun 2021 00:37:09 +0200</pubDate>
       <guid>/posts/fix-ark-proton-stuttering/</guid>
-      <description>Foreword If you have an NVIDIA GPU, you can try my other fix for stuttering games under Linux Proton. Maybe that fixes it. If that didn&amp;rsquo;t fix it or you have an AMD GPU, keep on reading.&#xA;Editing ARK&amp;rsquo;s launch options via Steam Inside your Steam library, do the following:&#xA;right-click on ARK: Survival Evolved click on &amp;ldquo;Properties&amp;rdquo; paste RADV_PERFTEST=aco %COMMAND% in the input field below &amp;ldquo;Launch Options&amp;rdquo; close out the window with the x-button That should be it.</description>
+      <description>&lt;h1 id=&#34;foreword&#34;&gt;Foreword&lt;/h1&gt;&#xA;&lt;p&gt;If you have an &lt;strong&gt;NVIDIA GPU&lt;/strong&gt;, you can try my &lt;a href=&#34;https://codef0x.dev/blog/posts/steam-proton-shader-caching.html&#34; target=&#34;_blank&#34;&gt;other fix for stuttering games under Linux Proton&lt;/a&gt;. Maybe that fixes it. If that didn&amp;rsquo;t fix it or you have an AMD GPU, keep on reading.&lt;/p&gt;&#xA;&lt;h1 id=&#34;editing-arks-launch-options-via-steam&#34;&gt;Editing ARK&amp;rsquo;s launch options via Steam&lt;/h1&gt;&#xA;&lt;p&gt;Inside your Steam library, do the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;right-click on ARK: Survival Evolved&lt;/li&gt;&#xA;&lt;li&gt;click on &amp;ldquo;Properties&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;paste &lt;code&gt;RADV_PERFTEST=aco %COMMAND%&lt;/code&gt; in the input field below &amp;ldquo;Launch Options&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;close out the window with the x-button&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;That should be it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Steam Proton Shader Cashing</title>
       <link>/posts/steam-proton-shader-cashing/</link>
       <pubDate>Thu, 17 Jun 2021 00:31:18 +0200</pubDate>
       <guid>/posts/steam-proton-shader-cashing/</guid>
-      <description>Disclaimer: This only works for NVIDIA cards! When I first tried out Steam&amp;rsquo;s Proton support, I noticed that DOOM Eternal wasn&amp;rsquo;t running smooth at all. I would be at a constant 75 FPS according to my FPS counter, but I still experienced a lot of stutters / micro lags while playing.&#xA;How I fixed the stuttering issue create a directory for the games to cache their shaders, e. g. /home/you/Shaders declare the following environment variables: __GL_SHADER_DISK_CACHE_SKIP_CLEANUP and set it to 1 __GL_SHADER_DISK_CACHE_PATH and set it to the path of your earlier created shaders directory However, this only fixes it for your current session.</description>
+      <description>&lt;h1 id=&#34;disclaimer-this-only-works-for-nvidia-cards&#34;&gt;Disclaimer: This only works for NVIDIA cards!&lt;/h1&gt;&#xA;&lt;p&gt;When I first tried out Steam&amp;rsquo;s Proton support, I noticed that DOOM Eternal wasn&amp;rsquo;t running smooth at all. I would be at a constant 75 FPS according to my FPS counter, but I still experienced a lot of stutters / micro lags while playing.&lt;/p&gt;&#xA;&lt;h1 id=&#34;how-i-fixed-the-stuttering-issue&#34;&gt;How I fixed the stuttering issue&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;create a directory for the games to cache their shaders, e. g. /home/you/Shaders&lt;/li&gt;&#xA;&lt;li&gt;declare the following environment variables:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;__GL_SHADER_DISK_CACHE_SKIP_CLEANUP&lt;/code&gt; and set it to &lt;code&gt;1&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;__GL_SHADER_DISK_CACHE_PATH&lt;/code&gt; and set it to the path of your earlier created shaders directory&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;However, this only fixes it for your current session. To make the fix persistent throughout system reboots, add these two lines to your &lt;code&gt;/etc/profile&lt;/code&gt; file, respectively the file your shell uses.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

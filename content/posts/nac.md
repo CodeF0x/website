@@ -2,6 +2,7 @@
 title: "It ain't stupid if it works"
 date: 2024-03-27T18:44:17+01:00
 draft: false
+tags: ["Development"]
 ---
 
 ### How I somewhat got around my shitty DSL download speeds

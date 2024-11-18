@@ -2,7 +2,7 @@
 title: "Remove Youtube Statement Banner"
 date: 2023-11-16T18:10:23+01:00
 draft: false
-tags: ["Internet", "YouTube"]
+tags: ["Internet", "YouTube", "Development"]
 ---
 
 How to remove the Statement / Theme Banners from YouTube
