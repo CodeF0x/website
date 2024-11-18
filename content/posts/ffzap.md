@@ -53,6 +53,6 @@ There’s still room for improvement, such as:
 - Optimizing the thread pool mechanism (locking and unlocking an `Arc` repeatedly can't be very efficient).
 - Expanding the output templating syntax.
 
-The code is hosted on [GitHub](https://github.com/CodeF0x/ffzap). Contributions are welcome!
+The code is hosted on [GitHub](https://github.com/CodeF0x/ffzap) and [crates.io](https://crates.io/crates/ffzap) from where it can be installed using `cargo`. Contributions are welcome!
 
 Thanks for reading my ramblings—writing isn’t my strong suit, but I hope you found this interesting. 😄
