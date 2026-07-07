@@ -18,7 +18,7 @@
 
 
 
-<script defer language="javascript" type="text/javascript" src="/js/bundle.min.4543a402f73ad97a625e934c4850690234dd292270df16ba85fbb1a9441928e8.js"></script>
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.880b3cd1c9731319b8e909ad4f5c007bfb1e7588c85951410eb005defad6fdbf.js"></script>
 
 
 
@@ -97,13 +97,13 @@
 
 
 
-<meta name="generator" content="Hugo 0.147.9">
+<meta name="generator" content="Hugo 0.164.0">
 
 
     
     
 
-<link type="text/css" rel="stylesheet" href="/css/bundle.min.1c6f56a6497e1d68469eb2a7efcf2b145601a94408f411014a7af5ffc3a73522.css">
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.5168e4ef581ea0ac23144c0a102b2c2638c2db66a9e9e2c16977db42a0cec7d2.css">
 
 
     
@@ -351,7 +351,7 @@
         <p class="footnote">
 powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
     <br>
-    &copy; 2025 . All rights reserved.
+    &copy; 2026 . All rights reserved.
 </p>
 
   </div>
@@ -404,7 +404,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <p>Most solutions involved batch and shell scripts. Having to copy, paste, and potentially debug them didn’t satisfy me. Additionally, controlling output options like filenames, extensions, and directory structures is theoretically simple, but it often requires adjusting the script every time. Thus, the idea of <strong>ffzap</strong> was born. Initially called <strong>MTC</strong> (Multithreaded Transcoding CLI), I later settled on <strong>ffzap</strong> to highlight the two most important aspects of the tool: using <strong>FFmpeg</strong> under the hood and emphasizing <strong>zap</strong> (as in speed or quickness).</p>
 <p>The tool is fairly simple, both in code and usage.</p>
 <p>Here&rsquo;s an example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ffzap -i <span style="color:#e6db74">&#34;~/Videos/YouTube/**/*.mp4&#34;</span> -f <span style="color:#e6db74">&#34;-vf &#39;scale=1920:1080,fps=30&#39; -c:v libx265 -preset medium -crf 23 -c:a aac -b:a 128k&#34;</span> -o <span style="color:#e6db74">&#34;~/Videos/encoded/{{dir}}/{{name}}.mkv&#34;</span> -t <span style="color:#ae81ff">4</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ffzap -i <span style="color:#e6db74">&#34;~/Videos/YouTube/**/*.mp4&#34;</span> -f <span style="color:#e6db74">&#34;-vf &#39;scale=1920:1080,fps=30&#39; -c:v libx265 -preset medium -crf 23 -c:a aac -b:a 128k&#34;</span> -o <span style="color:#e6db74">&#34;~/Videos/encoded/{{dir}}/{{name}}.mkv&#34;</span> -t <span style="color:#ae81ff">4</span>
 </span></span></code></pre></div><p>This command takes all videos in all subfolders of <code>~/Videos</code> ending in <code>.mp4</code>, re-encodes them as H.265 while changing the resolution to Full HD, the FPS to 30, and the audio bitrate to 128k. It runs 4 FFmpeg processes in parallel and saves all videos to a new directory, <code>~/Videos/encoded</code>, while preserving the original folder structure and filenames, but using MKV as the container format.</p>
 <h3 id="the-code">The Code</h3>
 <p>From a coding perspective, it&rsquo;s quite simple.</p>
@@ -419,7 +419,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <p><strong>ffzap</strong> supports glob patterns, but the implementation is admittedly a bit clunky. You must provide your glob pattern as a string, which is then processed using the <code>glob</code> crate. In the future, I might release a version that removes this dependency altogether—at least for Unix-based systems (I’m unsure how globbing works on Windows).</p>
 <p>The rest of the implementation is basic Rust. After identifying all files matching the glob pattern, a simple thread pool executes as many FFmpeg instances as specified with <code>-t &lt;amount&gt;</code>. The default is <code>2</code>.</p>
 <p>The output templating system is a straightforward search-and-replace mechanism. Here’s a simplified example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#f92672">..</span>.replace(<span style="color:#e6db74">&#34;{{ext}}&#34;</span>, path.extension().unwrap().to_str().unwrap());
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#f92672">..</span>.replace(<span style="color:#e6db74">&#34;{{ext}}&#34;</span>, path.extension().unwrap().to_str().unwrap());
 </span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
 <p>Creating <strong>ffzap</strong> was super fun. It’s a practical tool that supports a variety of use cases. Plus, it was a refreshing distraction from my usual frontend work, where multithreading, performance, and proper error handling for <code>stderr</code> aren’t typical concerns.</p>
 <p>There’s still room for improvement, such as:</p>

@@ -18,7 +18,7 @@
 
 
 
-<script defer language="javascript" type="text/javascript" src="/js/bundle.min.4543a402f73ad97a625e934c4850690234dd292270df16ba85fbb1a9441928e8.js"></script>
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.880b3cd1c9731319b8e909ad4f5c007bfb1e7588c85951410eb005defad6fdbf.js"></script>
 
 
 
@@ -97,13 +97,13 @@
 
 
 
-<meta name="generator" content="Hugo 0.147.9">
+<meta name="generator" content="Hugo 0.164.0">
 
 
     
     
 
-<link type="text/css" rel="stylesheet" href="/css/bundle.min.1c6f56a6497e1d68469eb2a7efcf2b145601a94408f411014a7af5ffc3a73522.css">
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.5168e4ef581ea0ac23144c0a102b2c2638c2db66a9e9e2c16977db42a0cec7d2.css">
 
 
     
@@ -351,7 +351,7 @@
         <p class="footnote">
 powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
     <br>
-    &copy; 2025 . All rights reserved.
+    &copy; 2026 . All rights reserved.
 </p>
 
   </div>
@@ -411,7 +411,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <p><img src="/img/youtube-banner.jpg" alt="YouTube banner in question"></p>
 <p>After years of these super annoying YouTube banners, I hacked together a little script that removes them from the DOM upon finding one.</p>
 <p>To run this, you need to install something like Tampermonkey (available for Firefox and Chrome) and create a new userscript with the following code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// ==UserScript==
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// ==UserScript==
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @name         Fuck YouTube Theme banners
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @namespace    https://codef0x.dev
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @version      1.0
@@ -420,10 +420,10 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @match        *://*.youtube.com/*
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @grant        none
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==/UserScript==
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>(() =&gt; {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// remove on initial page load
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">removeBanner</span>();
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">removeBanner</span>();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">target</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;#content&#39;</span>);
 </span></span><span style="display:flex;"><span>

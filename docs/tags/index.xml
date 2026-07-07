@@ -1,68 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on </title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on </description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jun 2025 22:33:00 +0200</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Life</title>
-      <link>/tags/life/</link>
-      <pubDate>Mon, 16 Jun 2025 22:33:00 +0200</pubDate>
-      <guid>/tags/life/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Other</title>
-      <link>/tags/other/</link>
-      <pubDate>Mon, 16 Jun 2025 22:33:00 +0200</pubDate>
-      <guid>/tags/other/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Development</title>
-      <link>/tags/development/</link>
-      <pubDate>Mon, 18 Nov 2024 22:58:30 +0100</pubDate>
-      <guid>/tags/development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Internet</title>
-      <link>/tags/internet/</link>
-      <pubDate>Thu, 16 Nov 2023 18:10:23 +0100</pubDate>
-      <guid>/tags/internet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>YouTube</title>
-      <link>/tags/youtube/</link>
-      <pubDate>Thu, 16 Nov 2023 18:10:23 +0100</pubDate>
-      <guid>/tags/youtube/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Gaming</title>
-      <link>/tags/gaming/</link>
-      <pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
-      <guid>/tags/gaming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>/tags/linux/</link>
-      <pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
-      <guid>/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Proton</title>
-      <link>/tags/proton/</link>
-      <pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
-      <guid>/tags/proton/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Tags on </title>
+		<link>/tags/</link>
+		<description>Recent content in Tags on </description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 16 Jun 2025 22:33:00 +0200</lastBuildDate>
+		
+			<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Life</title>
+				<link>/tags/life/</link>
+				<pubDate>Mon, 16 Jun 2025 22:33:00 +0200</pubDate>
+				<guid>/tags/life/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Other</title>
+				<link>/tags/other/</link>
+				<pubDate>Mon, 16 Jun 2025 22:33:00 +0200</pubDate>
+				<guid>/tags/other/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Development</title>
+				<link>/tags/development/</link>
+				<pubDate>Mon, 18 Nov 2024 22:58:30 +0100</pubDate>
+				<guid>/tags/development/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Internet</title>
+				<link>/tags/internet/</link>
+				<pubDate>Thu, 16 Nov 2023 18:10:23 +0100</pubDate>
+				<guid>/tags/internet/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>YouTube</title>
+				<link>/tags/youtube/</link>
+				<pubDate>Thu, 16 Nov 2023 18:10:23 +0100</pubDate>
+				<guid>/tags/youtube/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Gaming</title>
+				<link>/tags/gaming/</link>
+				<pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
+				<guid>/tags/gaming/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Linux</title>
+				<link>/tags/linux/</link>
+				<pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
+				<guid>/tags/linux/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Proton</title>
+				<link>/tags/proton/</link>
+				<pubDate>Sun, 04 Jul 2021 00:41:03 +0200</pubDate>
+				<guid>/tags/proton/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>
