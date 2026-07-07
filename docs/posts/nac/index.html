@@ -18,7 +18,7 @@
 
 
 
-<script defer language="javascript" type="text/javascript" src="/js/bundle.min.4543a402f73ad97a625e934c4850690234dd292270df16ba85fbb1a9441928e8.js"></script>
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.880b3cd1c9731319b8e909ad4f5c007bfb1e7588c85951410eb005defad6fdbf.js"></script>
 
 
 
@@ -97,13 +97,13 @@
 
 
 
-<meta name="generator" content="Hugo 0.147.9">
+<meta name="generator" content="Hugo 0.164.0">
 
 
     
     
 
-<link type="text/css" rel="stylesheet" href="/css/bundle.min.1c6f56a6497e1d68469eb2a7efcf2b145601a94408f411014a7af5ffc3a73522.css">
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.5168e4ef581ea0ac23144c0a102b2c2638c2db66a9e9e2c16977db42a0cec7d2.css">
 
 
     
@@ -351,7 +351,7 @@
         <p class="footnote">
 powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
     <br>
-    &copy; 2025 . All rights reserved.
+    &copy; 2026 . All rights reserved.
 </p>
 
   </div>
@@ -407,7 +407,7 @@ So I connected my PC to my phone&rsquo;s hotspot, and resumed the download. Spee
 So I tried turning off Wifi, waited for about two minutes, turning it back on, connecting to my phone and resume the download. My thought process being that maybe the provider would only limit for a &ldquo;sustained current of data&rdquo;, for the lack of a better word, and it actually worked. The download resumed just as fast as before I got limited.</p>
 <p>Because I only got full speed for about 10 to 15 minutes, the process of turning off the Wifi, waiting, turning it on and reconnecting got very annoying very quickly, I tried to find ways of achieving the same with less &ldquo;work&rdquo;. Soon I found out that I can just deactivate the Wifi adapter in Windows setting. It will then continue on Ethernet and when I want to try Wifi again, I just need to deactivate Ethernet and re-activate Wifi. It will re-connect automatically to the hotspot and resume the download on cellular data. That got way too cumbersome aswell, and I thought of a way to do it automatically.</p>
 <p>My first idea was to ask ChatGPT what the best language is to do native Windows programming. It thought of C# to be a good choice, so I enquired about some code that lets me cut off internet access on Windows 11, as I never even wrote a single line of C# in my life, and wanted to jump in head first without learning the basics. What it generated was surprisingly way less code than I expected:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Management;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>
@@ -439,14 +439,16 @@ So I tried turning off Wifi, waited for about two minutes, turning it back on, c
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The prompt being</p>
 <blockquote>
-<p>Using C#, how could I &ldquo;cut off&rdquo; internet access on Windows 11?</p></blockquote>
+<p>Using C#, how could I &ldquo;cut off&rdquo; internet access on Windows 11?</p>
+</blockquote>
 <p>The code snipped actually compiled and worked first try, what was a first for me with ChatGPT code generation. Usually it doens&rsquo;t really get what I want it to do or there&rsquo;s some other issue. Or maybe just my prompts suck, I don&rsquo;t know ¯\_(ツ)_/¯.</p>
 <p>Going on, I wanted to have some sort of GUI where I could just press a button to toggle the network adapter.</p>
 <p>Prompting</p>
 <blockquote>
-<p>Add a very simple GUI to it. Make an input field where the user can enter the network adapter name and a button that calls the DisableNetworkAdapter method</p></blockquote>
+<p>Add a very simple GUI to it. Make an input field where the user can enter the network adapter name and a button that calls the DisableNetworkAdapter method</p>
+</blockquote>
 <p>I got</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Management;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Windows.Forms;
 </span></span><span style="display:flex;"><span>
